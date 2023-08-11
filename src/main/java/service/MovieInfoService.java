@@ -25,4 +25,8 @@ public class MovieInfoService {
         var movie = retrieveMovieUsingId(movieId);
         return Mono.just(movie);
     }
+
+    public Flux<MovieInfo> retrieveMoviesFlux(){
+        return Flux.fromIterable(CommonUtil.createMovieList());
+    }
 }

@@ -20,4 +20,9 @@ public class Movie {
         this.movie = movie;
         this.reviewList = reviewList;
     }
+    public Movie(MovieInfo movie, List<Review> reviewList) {
+        this.movie = movie;
+        this.reviewList = reviewList;
+    }
+
 }
